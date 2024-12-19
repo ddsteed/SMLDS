@@ -1,0 +1,98 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[      3221,         90]
+NotebookOptionsPosition[      1600,         51]
+NotebookOutlinePosition[      3036,         88]
+CellTagsIndexPosition[      2993,         85]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Contents", "TOCTitle",ExpressionUUID->"d8edcc5e-9988-4537-af2e-30b09ee75cbe"],
+
+Cell[TextData[ButtonBox["Preface",
+ BaseStyle->"TOCSection",
+ Evaluator->Automatic,
+ ButtonFunction:>
+  Module[{WolframBookTools`Private`nb$}, 
+   WolframBookTools`Private`nb$ = NotebookOpen[
+      FileNameJoin[{
+        NotebookDirectory[], "SML-00-preface.nb"}]]; 
+   NotebookFind[
+    WolframBookTools`Private`nb$, "779ac440-64b9-421f-a613-32e9713c20c1", All,
+      ExpressionUUID]]]], "TOCSection",ExpressionUUID->"e3b3dd1e-5f03-4fbd-\
+a355-d5087aa333f3"],
+
+Cell[TextData[ButtonBox["Abstract",
+ BaseStyle->"TOCSection",
+ Evaluator->Automatic,
+ ButtonFunction:>
+  Module[{WolframBookTools`Private`nb$}, 
+   WolframBookTools`Private`nb$ = NotebookOpen[
+      FileNameJoin[{
+        NotebookDirectory[], "SML-00-preface.nb"}]]; 
+   NotebookFind[
+    WolframBookTools`Private`nb$, "7b607a21-3849-423c-9b7c-41250a406ef5", All,
+      ExpressionUUID]]]], "TOCSection",ExpressionUUID->"b7c93419-9ada-40ff-\
+9569-c0f514ccb30b"]
+}, Open  ]]
+},
+WindowToolbars->{},
+WindowSize->{808, 911},
+WindowMargins->{{556, Automatic}, {Automatic, 58}},
+FrontEndVersion->"14.1 for Mac OS X ARM (64-bit) (July 16, 2024)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData["TOCTitle"], CellFrame -> {{0, 0}, {0, 0}}, 
+    CellMargins -> {{47, Inherited}, {12, 64}}, 
+    CellGroupingRules -> {"SectionGrouping", 60}, FontFamily -> 
+    "Source Sans Pro Semibold", FontSize -> 28, FontSlant -> "Plain", 
+    FontColor -> GrayLevel[0]], 
+   Cell[
+    StyleData["TOCSection"], CellMargins -> {{66, 3}, {-13, 9}}, FontFamily -> 
+    "Source Sans Pro Semibold", FontSize -> 20, FontSlant -> "Plain", 
+    FontColor -> GrayLevel[0]], 
+   Cell[
+    StyleData["TOCSubsection"], CellMargins -> {{82, 3}, {2, 7}}, FontFamily -> 
+    "Source Sans Pro Semibold", FontSize -> 16, FontSlant -> "Italic", 
+    FontColor -> GrayLevel[0.2]], 
+   Cell[
+    StyleData["TOCSubsubsection"], CellMargins -> {{95, 3}, {2, 7}}, 
+    FontFamily -> "Source Sans Pro Semibold", FontSize -> 13, FontSlant -> 
+    "Italic", FontColor -> GrayLevel[0.25]]}, Visible -> False, 
+  FrontEndVersion -> "14.1 for Mac OS X ARM (64-bit) (July 16, 2024)", 
+  StyleDefinitions -> "PrivateStylesheetFormatting.nb"],
+ExpressionUUID->"e1ad179a-cee3-4911-b5b4-49963b23b8a1"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 83, 0, 136, "TOCTitle",ExpressionUUID->"d8edcc5e-9988-4537-af2e-30b09ee75cbe"],
+Cell[662, 24, 459, 11, 40, "TOCSection",ExpressionUUID->"e3b3dd1e-5f03-4fbd-a355-d5087aa333f3"],
+Cell[1124, 37, 460, 11, 40, "TOCSection",ExpressionUUID->"b7c93419-9ada-40ff-9569-c0f514ccb30b"]
+}, Open  ]]
+}
+]
+*)
+

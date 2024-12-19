@@ -1,0 +1,470 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     22571,        462]
+NotebookOptionsPosition[     19239,        391]
+NotebookOutlinePosition[     19704,        408]
+CellTagsIndexPosition[     19661,        405]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ StyleBox["Mohamed M. Hammad",
+  FontFamily->"FZLanTingHei-DB-GBK",
+  FontSize->12,
+  FontWeight->"Regular",
+  FontColor->RGBColor[
+   0.8488288700694285, 0.3848325322346838, 0.1479972533760586]],
+ StyleBox["\[LineSeparator]",
+  FontSize->12,
+  FontColor->RGBColor[1, 0.5, 0]],
+ StyleBox["\n",
+  FontSize->12,
+  FontSlant->"Italic",
+  FontColor->RGBColor[1, 0.5, 0]],
+ StyleBox["Statistics for Machine Learning with Mathematica Applications      \
+                  ",
+  FontFamily->"Arial Unicode MS",
+  FontSize->17.5,
+  FontWeight->"Regular",
+  FontColor->RGBColor[
+   0.9866483558403907, 0.9388876173037308, 0.6336003662165255]],
+ StyleBox[ButtonBox[">",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    FrontEnd`FileName[{$RootDirectory, "Users", "fengh", "Documents", "RDS", 
+      "EDITED", "MPAAI"}, "MPAAI-1-Introduction.nb", CharacterEncoding -> 
+     "UTF-8"], None},
+  ButtonNote->
+   "/Users/fengh/Documents/RDS/EDITED/MPAAI/MPAAI-1-Introduction.nb"],
+  FontFamily->"Arial Unicode MS",
+  FontSize->17.5,
+  FontWeight->"Regular",
+  FontColor->RGBColor[
+   0.9866483558403907, 0.9388876173037308, 0.6336003662165255]],
+ StyleBox["    ",
+  FontFamily->"Arial Unicode MS",
+  FontSize->17.5,
+  FontWeight->"Regular",
+  FontColor->RGBColor[
+   0.9866483558403907, 0.9388876173037308, 0.6336003662165255]],
+ StyleBox[ButtonBox["\[CapitalXi]",
+  BaseStyle->"Hyperlink",
+  ButtonData->{
+    FrontEnd`FileName[{$RootDirectory, "Users", "fengh", "Documents", "RDS", 
+      "EDITED", "Statistics_for_Machine_Learning_with_Mathematica"}, 
+     "contents.nb", CharacterEncoding -> "UTF-8"], None},
+  ButtonNote->
+   "/Users/fengh/Documents/RDS/EDITED/Statistics_for_Machine_Learning_with_\
+Mathematica/contents.nb"],
+  FontFamily->"Arial Unicode MS",
+  FontSize->17.5,
+  FontWeight->"Regular",
+  FontColor->RGBColor[
+   0.9866483558403907, 0.9388876173037308, 0.6336003662165255]],
+ StyleBox["\[LineSeparator]\[LineSeparator]",
+  FontSize->12,
+  FontSlant->"Italic",
+  FontColor->RGBColor[1, 0.5, 0]],
+ StyleBox["Edited by Hao Feng",
+  FontFamily->"Futura",
+  FontSize->12,
+  FontWeight->"Medium",
+  FontSlant->"Italic",
+  FontColor->RGBColor[
+   0.8488288700694285, 0.3848325322346838, 0.1479972533760586]]
+}], "Text",
+ CellMargins->{{66, -45}, {4, 12}},
+ CellChangeTimes->{{3.9397640484222183`*^9, 3.939764052679113*^9}, 
+   3.9397641564677134`*^9, 3.939764214184162*^9, {3.939774845841297*^9, 
+   3.9397748486786137`*^9}, 3.9397769383984737`*^9, 3.939777524212697*^9, {
+   3.939777679887363*^9, 3.9397776986053457`*^9}, 3.939777748637487*^9, {
+   3.939777854556375*^9, 3.939777878635145*^9}, {3.9397779299447737`*^9, 
+   3.9397779337440853`*^9}, {3.9397779656956463`*^9, 
+   3.9397779872993917`*^9}, {3.939783995957651*^9, 3.9397839959644203`*^9}, 
+   3.93994857128743*^9, {3.9403030753694696`*^9, 3.9403030753782463`*^9}, {
+   3.940303217729404*^9, 3.940303217737211*^9}, {3.940741024123201*^9, 
+   3.940741027365489*^9}, {3.940741081934002*^9, 3.940741081942062*^9}, {
+   3.943567220607367*^9, 3.9435672414910088`*^9}, {3.94356735516547*^9, 
+   3.943567355169693*^9}, {3.9435806332691107`*^9, 3.9435806467350597`*^9}, {
+   3.9435809115217247`*^9, 3.9435809115260973`*^9}},
+ LineSpacing->{0.6999999999999997, 3},
+ Background->RGBColor[
+  0.13066300450141147`, 0.12460517280842298`, 0.4353551537346456],
+ CellID->912160115,ExpressionUUID->"67aab6c7-b186-4fbc-a04a-683b7453f682"],
+
+Cell[CellGroupData[{
+
+Cell["Preface", "Section",
+ CellChangeTimes->{
+  3.652728456208679*^9, 3.652728527108994*^9, {3.93977430409951*^9, 
+   3.939774306756702*^9}, {3.939774503882483*^9, 3.939774505098134*^9}},
+ CounterAssignments->{{"Section", 0}},
+ CellID->1815624021,ExpressionUUID->"779ac440-64b9-421f-a613-32e9713c20c1"],
+
+Cell["\<\
+Statistics provides us with the means to make sense of data, uncover \
+patterns, and draw meaningful conclusions from seemingly complex information. \
+It has applications in a wide range of disciplines, including science, \
+engineering, finance, social sciences, and many others. Meanwhile, \
+Mathematica, a powerful computational software system, has been a fundamental \
+tool for solving mathematical problems, performing symbolic calculations, and \
+visualizing mathematical concepts. Bringing these two realms together opens \
+up new possibilities for both novices and seasoned practitioners. By \
+harnessing the capabilities of Mathematica, statisticians can handle large \
+datasets, conduct sophisticated analyses, and communicate their findings more \
+effectively. \
+\>", "Text",
+ CellChangeTimes->{{3.943580696889978*^9, 3.9435807132384357`*^9}},
+ CellID->1332824869,ExpressionUUID->"d030bc62-41eb-4552-89a5-c67f4c9e8784"],
+
+Cell["\<\
+In writing this book, our primary objective was to create a resource that \
+would facilitate a comprehensive understanding of the fundamental concepts of \
+statistics, essential for mastering the intricacies of machine learning, data \
+science, and artificial intelligence. A central focus of this book is to \
+introduce the reader to Mathematica, leveraging it as a powerful \
+computational tool to bolster their statistical prowess. Not only does the \
+book cater to beginners in the field, but it also aims to serve as a \
+reference for seasoned data scientists, machine-learning practitioners, \
+bio-statisticians, finance professionals, or engineers, who either possess \
+prior knowledge of statistics or seek to fill gaps in their understanding. \
+\>", "Text",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580719593154*^9}},
+ CellID->124396859,ExpressionUUID->"f95880a5-a6d6-466b-a788-2f5bd2e64dc8"],
+
+Cell["\<\
+There are several reasons why one might choose Mathematica for statistics: \
+\>", "Text",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580722216179*^9}},
+ CellID->1556378291,ExpressionUUID->"9f8a0b57-3b92-428f-aa50-02def9472cc1"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+\[Bullet] Comprehensive functionality: Mathematica provides a wide range of \
+built-in statistical functions and capabilities. It can handle various \
+statistical calculations, probability distributions, hypothesis testing, \
+regression analysis, and more. This extensive functionality makes it a \
+versatile tool for statisticians and data analysts. \
+\>", "Item",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580726717217*^9}},
+ CellID->61010403,ExpressionUUID->"56728b0c-418e-4f12-8463-f30f434eea6f"],
+
+Cell["\<\
+\[Bullet] Symbolic computation: Mathematica is known for its strong symbolic \
+computation capabilities. This allows users to work with mathematical \
+expressions and perform symbolic manipulations, which can be particularly \
+useful for theoretical statistical work and advanced modeling. This unique \
+feature empowers users to perform analytical derivations, evaluate complex \
+integrals, and solve differential equations involving statistical models. \
+Such integration not only streamlines the workflow but also enhances the \
+precision and rigor of statistical analyses. \
+\>", "Item",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580730453402*^9}},
+ CellID->463993524,ExpressionUUID->"234c4f85-8c22-4729-a3fe-e11c5b3af163"],
+
+Cell["\<\
+\[Bullet] Data visualization: The software includes powerful data \
+visualization tools that enable users to create informative plots and graphs \
+to understand and present statistical results effectively. Utilizing built-in \
+functions and interactive tools, Mathematica enables users to create a wide \
+array of visually appealing charts, graphs, and plots. From simple histograms \
+and scatter plots to 3D visualizations, users can efficiently present complex \
+data patterns and relationships. \
+\>", "Item",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580701960382*^9}, {
+  3.9435807358404922`*^9, 3.9435807358647842`*^9}},
+ CellID->426122780,ExpressionUUID->"1537acc9-b47a-4773-acfd-a5d048b4bf48"],
+
+Cell["\<\
+\[Bullet] Interactivity and dynamic interface: Mathematica has a dynamic and \
+interactive interface that allows users to manipulate variables and \
+parameters in real-time. This can be beneficial for exploring statistical \
+concepts and conducting sensitivity analyses. \
+\>", "Item",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580701960382*^9}, {
+  3.9435807390536118`*^9, 3.943580741369079*^9}},
+ CellID->1023368860,ExpressionUUID->"45f1ef2f-7657-4844-b357-018a44aa90ff"],
+
+Cell["\<\
+\[Bullet] Documentation and support: Mathematica is well-documented, and \
+Wolfram Research, the company behind Mathematica, provides extensive \
+resources and support to users. There are numerous tutorials, examples, and \
+community forums to help users learn and troubleshoot any issues. \
+\>", "Item",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580701960382*^9}, {
+  3.9435807390536118`*^9, 3.94358073907198*^9}},
+ CellID->1930814156,ExpressionUUID->"481f6fc6-045e-466a-b49f-7610ba1bef85"],
+
+Cell["\<\
+\[Bullet] Integration with other areas: Mathematica is not limited to \
+statistics; it is a general-purpose computational platform. This means it can \
+seamlessly integrate statistical analysis with other mathematical, \
+engineering, or scientific computations within the same environment. \
+\>", "Item",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580701960382*^9}, {
+  3.943580745743801*^9, 3.943580745768178*^9}},
+ CellID->396562601,ExpressionUUID->"4948dc42-5362-4979-a961-a22b4a9abb2d"],
+
+Cell["\<\
+\[Bullet] Ease of use: For those familiar with the Mathematica language, \
+performing statistical analyses can be straightforward and efficient. The \
+language is designed to be expressive and readable, allowing users to perform \
+complex tasks with concise code. With interactive notebooks, users can \
+document and share their statistical workflows, promoting collaboration and \
+reproducibility. \
+\>", "Item",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580701960382*^9}, {
+  3.9435807644343987`*^9, 3.943580767477104*^9}},
+ CellID->951573944,ExpressionUUID->"983e7921-bfcd-4eec-9ea5-cf2e5464ec14"]
+}, Open  ]],
+
+Cell["\<\
+Whether you are a student seeking a thorough grounding in statistics or a \
+professional researcher aiming to streamline your data analysis workflow, the \
+book offers a comprehensive and practical guide to leveraging the combined \
+power of statistics and Mathematica for data-driven decision-making and \
+scientific discovery. By the end of the book, readers will have gained a deep \
+understanding of statistical concepts and the proficiency to apply them \
+effectively using Mathematica. \
+\>", "Text",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580701960382*^9}, {
+  3.943580770331711*^9, 3.943580770355823*^9}},
+ CellID->1177934520,ExpressionUUID->"33ba67e3-b42d-4c85-bdac-15f6ae87b323"],
+
+Cell["\<\
+Most books on statistics tend to either be overly theoretical or present \
+computational algorithms without enough mathematical background. The present \
+work adopts a strategy that lies somewhere in the middle of these two \
+directions. The computational statistics books present statistics methods to \
+readers to carry out calculations manually or develop these algorithms on \
+their own. This is obviously unrealistic for a typical introductory \
+statistics course, which discusses a wide range of statistics strategies. By \
+bridging the gap between theoretical principles and practical implementation, \
+this book empowers learners to unlock the full potential of statistics in \
+their pursuit of excellence in various domains. \
+\>", "Text",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580701960382*^9}, {
+  3.943580786885825*^9, 3.943580786908887*^9}},
+ CellID->156400360,ExpressionUUID->"7094a593-980a-45b0-ae3d-b6306a6a3b57"],
+
+Cell["\<\
+Students studying engineering, operations research, data science, and \
+mathematics at the undergraduate and graduate levels might find this book \
+helpful. We have provided manually solved examples and examples solved using \
+codes. We tried to provide proofs as simply as possible so that any reader \
+with a background in calculus could easily follow them. In fact, the only \
+prerequisites for engaging with the material are some basic programming \
+experience and a fundamental understanding of mathematical notation. This \
+ensures that learners from various backgrounds can dive into the world of \
+statistics with confidence, using code as their guiding light to master the \
+subject matter effectively. \
+\>", "Text",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580701960382*^9}, {
+  3.943580790291753*^9, 3.94358079031603*^9}},
+ CellID->878791512,ExpressionUUID->"b895398d-2796-4223-adf0-38e6dca3bfad"],
+
+Cell["\<\
+The book takes a refreshingly code-centric approach. Nearly all the concepts \
+we introduce are accompanied by illustrative code examples, lending \
+practicality and tangibility to the learning experience. Even the figures in \
+the book are generated using these code examples, emphasizing the code-first \
+methodology. In order to ensure accessibility and ease of understanding, we \
+have deliberately crafted the code examples in a simple format, prioritizing \
+readability over efficiency and generality. In line with our instructional \
+philosophy, each code example serves a dual purpose: not only does it \
+demonstrate a specific statistical point but also simultaneously introduces \
+and reinforces Mathematica programming concepts. Readers will learn how to \
+leverage of Mathematica to perform complex statistical calculations, simulate \
+data, and create visual representations of their findings. \
+\>", "Text",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580701960382*^9}, {
+  3.943580799515555*^9, 3.943580799540311*^9}},
+ CellID->1217667055,ExpressionUUID->"ab9d2c74-af5c-4468-92c6-0907e06599ba"],
+
+Cell["\<\
+The text covers topics like descriptive statistics, probability \
+distributions, multivariate statistics, sampling theory, estimation theory, \
+decision theory, hypothesis testing, and various inferential techniques, \
+showcasing how Mathematica can handle sophisticated statistical models with \
+ease. As readers progress through the book, they will find themselves \
+empowered to explore a wide range of statistical techniques, from classical \
+approaches to modern methodologies. \
+\>", "Text",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580701960382*^9}, {
+  3.943580805035239*^9, 3.943580805059465*^9}},
+ CellID->900981586,ExpressionUUID->"9a192836-a165-4a14-be9c-451f53c5c343"],
+
+Cell["\<\
+We offer our sincerest thanks to Professor Mohamed Abdalla Darwish the head \
+of Department of Mathematics, Faculty of Science, Damanhour University, for \
+his supporting. We express our deep gratitude to Professor Amr R. El Dhaba \
+for his valuable discussions and for supporting this work. Also, we are \
+grateful to many colleagues and friends for their invaluable feedback, \
+thoughtful comments, constructive suggestions. These include Professor Hamed \
+Awad, Dr. Fatma El-Safty, Dr. Hamdy El Shamy, Dr. Mohamed Elhaddad, Mohamed \
+Yahia, Ayman A. Abdelaziz, Eman Farag, Hassan M. Shetawy, Walaa Mansour, Moaz \
+El-Essawey, Aziza Salah, and Eman R. Hendawy. \
+\>", "Text",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580701960382*^9}, {
+  3.9435808102747726`*^9, 3.9435808102995358`*^9}},
+ CellID->1248379571,ExpressionUUID->"09ac70cf-0e1c-421d-be80-ccf7628aca38"],
+
+Cell["\<\
+We hope this book will give data scientists the tools they need to succeed in \
+a data-driven world.\
+\>", "Text",
+ CellChangeTimes->{{3.943580696889978*^9, 3.943580701960382*^9}},
+ CellID->2076943874,ExpressionUUID->"c8da6e59-f0e8-42d4-94eb-6de96b55a144"],
+
+Cell["knowledge itself is power - Sir Francis Bacon 1597 ", "Text",
+ CellChangeTimes->{{3.943567570061882*^9, 3.943567579071979*^9}, 
+   3.943567728500908*^9, {3.9435677800777597`*^9, 3.943567780102065*^9}},
+ FontSlant->"Italic",
+ CellID->2126199977,ExpressionUUID->"d985b295-5961-4fdf-8c8e-5f6aed9db582"],
+
+Cell["Egypt 2023 M. M. Hammad", "Text",
+ CellChangeTimes->{{3.943567570061882*^9, 3.943567579071979*^9}, 
+   3.943567728500908*^9, {3.943580814014204*^9, 3.943580814326889*^9}},
+ CellID->1443446675,ExpressionUUID->"cfa8da4d-6e55-4df2-8533-7d883b3b06ae"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Abstract", "Section",
+ CellChangeTimes->{
+  3.652728456208679*^9, 3.652728527108994*^9, {3.943580822176043*^9, 
+   3.9435808240231733`*^9}},
+ CellID->1503564548,ExpressionUUID->"7b607a21-3849-423c-9b7c-41250a406ef5"],
+
+Cell["\<\
+In recent years, the field of statistics has experienced a surge in interest \
+and application, largely due to significant advances in computer technology. \
+This progress has led to remarkable developments in statistics methods and \
+algorithms, enabling their widespread adoption across various disciplines. \
+Key areas benefiting from these advancements include machine learning, \
+economics, finance, geophysics, molecular modeling, computational systems \
+biology, operations research, and engineering. For example, in machine \
+learning, statistics forms the foundation for algorithms used in regression, \
+classification, clustering, and deep learning to analyze vast datasets and \
+make predictions. \
+\>", "Text",
+ CellChangeTimes->{{3.943580832267641*^9, 3.9435808396790533`*^9}},
+ CellID->1713909951,ExpressionUUID->"d7641d78-cb2e-43c4-b0d5-649a54655924"],
+
+Cell["\<\
+Mathematica, among other tools, has played a significant role in enabling the \
+integration of statistics and computer technology, facilitating deeper \
+exploration of data-driven insights and groundbreaking discoveries across \
+diverse domains. With a rich library of functions, Mathematica allows users \
+to calculate measures of central tendency, dispersion, and correlation, as \
+well as perform hypothesis testing and estimation. Moreover, it supports \
+probability distributions, making simulations and probabilistic modeling \
+tasks more accessible. \
+\>", "Text",
+ CellChangeTimes->{{3.943580832267641*^9, 3.943580846118971*^9}},
+ CellID->666959456,ExpressionUUID->"734bac2a-7b5b-49ce-987e-a790d3124365"],
+
+Cell["\<\
+This monograph presents the main theorems in mathematical statistics, ranging \
+from basic descriptive statistics to sophisticated inferential techniques. In \
+addition, we have created, more than 200 manipulates cover different \
+scenarios in statistics, more than 500 light Mathematica codes (examples) and \
+25 programs (procedures) that follow the principles of testing hypotheses and \
+estimation theory. The code will run as-is with no code from prior algorithms \
+or third parties required beyond the installation of Mathematica.\
+\>", "Text",
+ CellChangeTimes->{{3.943580832267641*^9, 3.943580836088037*^9}},
+ CellID->1378478530,ExpressionUUID->"c43aef1b-e1e9-4c51-a82f-070b4695dc1c"]
+}, Open  ]]
+},
+WindowSize->{960, 1027},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"14.1 for Mac OS X ARM (64-bit) (July 16, 2024)",
+StyleDefinitions->FrontEnd`FileName[{"Wolfram"}, "BookToolsStyles.nb", 
+  CharacterEncoding -> "UTF-8"],
+ExpressionUUID->"8861bace-5584-420b-8e0c-c51fd7c6d3a1"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[554, 20, 3393, 83, 130, "Text",ExpressionUUID->"67aab6c7-b186-4fbc-a04a-683b7453f682",
+ CellID->912160115],
+Cell[CellGroupData[{
+Cell[3972, 107, 303, 5, 133, "Section",ExpressionUUID->"779ac440-64b9-421f-a613-32e9713c20c1",
+ CounterAssignments->{{"Section", 0}},
+ CellID->1815624021],
+Cell[4278, 114, 940, 14, 311, "Text",ExpressionUUID->"d030bc62-41eb-4552-89a5-c67f4c9e8784",
+ CellID->1332824869],
+Cell[5221, 130, 917, 13, 281, "Text",ExpressionUUID->"f95880a5-a6d6-466b-a788-2f5bd2e64dc8",
+ CellID->124396859],
+Cell[6141, 145, 241, 4, 45, "Text",ExpressionUUID->"9f8a0b57-3b92-428f-aa50-02def9472cc1",
+ CellID->1556378291],
+Cell[CellGroupData[{
+Cell[6407, 153, 515, 8, 113, "Item",ExpressionUUID->"56728b0c-418e-4f12-8463-f30f434eea6f",
+ CellID->61010403],
+Cell[6925, 163, 742, 11, 162, "Item",ExpressionUUID->"234c4f85-8c22-4729-a3fe-e11c5b3af163",
+ CellID->463993524],
+Cell[7670, 176, 716, 11, 137, "Item",ExpressionUUID->"1537acc9-b47a-4773-acfd-a5d048b4bf48",
+ CellID->426122780],
+Cell[8389, 189, 488, 8, 88, "Item",ExpressionUUID->"45f1ef2f-7657-4844-b357-018a44aa90ff",
+ CellID->1023368860],
+Cell[8880, 199, 506, 8, 113, "Item",ExpressionUUID->"481f6fc6-045e-466a-b49f-7610ba1bef85",
+ CellID->1930814156],
+Cell[9389, 209, 504, 8, 88, "Item",ExpressionUUID->"4948dc42-5362-4979-a961-a22b4a9abb2d",
+ CellID->396562601],
+Cell[9896, 219, 615, 10, 137, "Item",ExpressionUUID->"983e7921-bfcd-4eec-9ea5-cf2e5464ec14",
+ CellID->951573944]
+}, Open  ]],
+Cell[10526, 232, 707, 11, 193, "Text",ExpressionUUID->"33ba67e3-b42d-4c85-bdac-15f6ae87b323",
+ CellID->1177934520],
+Cell[11236, 245, 948, 14, 281, "Text",ExpressionUUID->"7094a593-980a-45b0-ae3d-b6306a6a3b57",
+ CellID->156400360],
+Cell[12187, 261, 925, 14, 281, "Text",ExpressionUUID->"b895398d-2796-4223-adf0-38e6dca3bfad",
+ CellID->878791512],
+Cell[13115, 277, 1122, 16, 340, "Text",ExpressionUUID->"ab9d2c74-af5c-4468-92c6-0907e06599ba",
+ CellID->1217667055],
+Cell[14240, 295, 697, 11, 193, "Text",ExpressionUUID->"9a192836-a165-4a14-be9c-451f53c5c343",
+ CellID->900981586],
+Cell[14940, 308, 882, 13, 281, "Text",ExpressionUUID->"09ac70cf-0e1c-421d-be80-ccf7628aca38",
+ CellID->1248379571],
+Cell[15825, 323, 266, 5, 75, "Text",ExpressionUUID->"c8da6e59-f0e8-42d4-94eb-6de96b55a144",
+ CellID->2076943874],
+Cell[16094, 330, 305, 4, 45, "Text",ExpressionUUID->"d985b295-5961-4fdf-8c8e-5f6aed9db582",
+ CellID->2126199977],
+Cell[16402, 336, 253, 3, 45, "Text",ExpressionUUID->"cfa8da4d-6e55-4df2-8533-7d883b3b06ae",
+ CellID->1443446675]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16692, 344, 222, 4, 133, "Section",ExpressionUUID->"7b607a21-3849-423c-9b7c-41250a406ef5",
+ CellID->1503564548],
+Cell[16917, 350, 876, 13, 281, "Text",ExpressionUUID->"d7641d78-cb2e-43c4-b0d5-649a54655924",
+ CellID->1713909951],
+Cell[17796, 365, 722, 11, 222, "Text",ExpressionUUID->"734bac2a-7b5b-49ce-987e-a790d3124365",
+ CellID->666959456],
+Cell[18521, 378, 702, 10, 222, "Text",ExpressionUUID->"c43aef1b-e1e9-4c51-a82f-070b4695dc1c",
+ CellID->1378478530]
+}, Open  ]]
+}
+]
+*)
+
